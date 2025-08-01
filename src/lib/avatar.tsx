@@ -9,7 +9,7 @@ interface Props {
 export const generateAvatarUri = ({ seed, variant }: Props) => {
     let avatar;
 
-    if(variant == "botttsNeutral") {
+    if(variant === "botttsNeutral") {
         avatar = createAvatar(botttsNeutral, { seed });
     } else {
         avatar = createAvatar(initials, { seed, fontWeight: 500, fontSize: 42 });
