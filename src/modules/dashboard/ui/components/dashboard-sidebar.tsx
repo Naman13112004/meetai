@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
 import { BotIcon, StarIcon, VideoIcon } from "lucide-react";
-import { DashboardUserButton } from "./dashboard-user-button";
+
 import { 
     Sidebar,
     SidebarContent, 
@@ -19,6 +19,9 @@ import {
     SidebarMenuButton,
     SidebarMenuItem
 } from "@/components/ui/sidebar";
+
+import { DashboardTrial } from "./dashboard-trial";
+import { DashboardUserButton } from "./dashboard-user-button";
 
 const firstSection = [
     {
@@ -116,6 +119,7 @@ const DashboardSidebar = () => {
             </SidebarContent>
 
             <SidebarFooter className="text-white">
+                <DashboardTrial />
                 <DashboardUserButton />
             </SidebarFooter>
         </Sidebar>
