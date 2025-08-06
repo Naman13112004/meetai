@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-Powered Video Call App - Meet AI
 
-## Getting Started
+This project is a **full-stack AI-powered video conferencing application** that enables users to initiate real-time video calls, generate transcripts and summaries, view meeting recordings, and interact with a contextual AI chatbot post-meeting.
 
-First, run the development server:
+Built with the latest modern web stack and powered by the **Stream Video SDK**, this app demonstrates the integration of **custom AI agents**, **background job processing**, and **AI-enhanced meeting analysis**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> 📌 **Note:** Due to monetary restrictions, certain premium features like real-time AI voice replies, transcript-based summaries, and contextual AI chat responses are currently non-functional. These features require paid OpenAI credits which are not integrated at this stage. Please bear with the limited functionality 🙏
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Live Site
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+👉 **Live Demo:** https://meetai-rosy.vercel.app/
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Built by
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is built by **Naman**, based on the tutorial and source code by the amazing [Code With Antonio](https://www.youtube.com/@codewithantonio). Full credits to him for the architecture, open-source tutorial, and guiding structure.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧠 Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🤖 AI-powered video calls
+- 📞 Real-time video meetings via Stream Video SDK
+- 💬 Live chat using Stream Chat SDK
+- 📝 Transcripts & meeting summaries (disabled currently)
+- 📺 Video playback and meeting history
+- 🔍 Transcript search
+- 💬 AI Q&A (disabled currently)
+- 🔐 Authentication
+- 💳 Polar subscription payments
+- 📱 Fully mobile responsive
+- 🎨 Clean, modern UI with Tailwind CSS v4 & Shadcn/UI
+- ⚙️ Background jobs via Inngest
+- 🧑‍💻 PR Reviews using CodeRabbit
+- 📂 Git-based project with proper GitHub workflow
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ⚙️ Technologies Used & Why
+
+| Tech | Purpose |
+|------|---------|
+| **Next.js 15** | App framework with React Server Components for improved performance |
+| **React 19** | UI layer with latest hooks and transitions |
+| **TypeScript** | Type safety, better DX and maintainability |
+| **Tailwind CSS v4** | Utility-first modern styling |
+| **shadcn/ui** | Prebuilt and customizable UI components |
+| **Stream Video SDK** | Real-time video call infrastructure |
+| **Stream Chat SDK** | Real-time chat integrated with video |
+| **Inngest** | Handling background jobs like summary generation, transcription etc. |
+| **OpenAI (Planned)** | For meeting summaries, transcript understanding, and AI chat |
+| **CodeRabbit** | AI-powered code review tool integrated in PR workflow |
+| **Polar.sh** | Manages SaaS subscriptions and payments |
+| **Vercel** | Production-grade hosting and CI/CD for Next.js |
+| **Git + GitHub** | Full version control and project management workflow |
+
+---
+
+## 📂 Project Highlights
+
+- ✅ Full Git workflow followed
+- ✅ Deployed using **Vercel**
+- ✅ Component-based design
+- ✅ Follows best practices for file organization
+- ✅ Hooks, server components, and background jobs well-integrated
+
+---
+
+## 🚧 Limitations
+
+Due to budget constraints, this project does **not include OpenAI API integration** as of now. Therefore, the following features are disabled:
+
+- Real-time agent voice interaction
+- Meeting summarization
+- Transcript-based contextual AI chatbot
+
+These features are structured into the project and can be easily enabled once OpenAI or another LLM provider is integrated.
+
+---
+
+## 🧾 Credits
+
+This project was **heavily inspired** by [Code With Antonio's](https://www.youtube.com/@codewithantonio) open-source AI video call app series. Special thanks to him for the vision, code architecture, and step-by-step guidance.
+
+---
+
+## 🙏 Acknowledgements
+
+- [Stream](https://getstream.io/) for their excellent SDKs
+- [Inngest](https://www.inngest.com/) for async job handling
+- [Polar](https://www.polar.sh/) for subscription management
+- [OpenAI](https://openai.com/api/) for providing the future AI engine
+
+---
+
+## 📌 TODOs (Future Scope)
+
+- [ ] Integrate OpenAI via OpenRouter or other free LLM APIs
+- [ ] Add Whisper for audio-to-text transcription
+- [ ] Enable contextual AI chat post-call
+- [ ] Improve accessibility and internationalization support
+
+---
+
+## 🗣️ Feedback
+
+Feel free to fork the repo, raise issues, or suggest improvements. I’m always learning and happy to improve this project based on feedback!
+
